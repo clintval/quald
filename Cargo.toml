@@ -1,0 +1,24 @@
+[package]
+name = "quald"
+version = "0.1.0"
+edition = "2021"
+authors = ["Clint Valentine <valentine.clint@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/clintval/quald"
+description = "Detect the most likely quality score for FASTQ files"
+documentation = "https://github.com/clintval/quald/README.md"
+categories = ["science"]
+keywords = ["bioinformatics", "phred", "quality", "illumina", "solexa"]
+exclude = [".github/workflows/*", ".gitignore"]
+
+[lib]
+name = "quald"
+path = "src/lib.rs"
+
+[[bin]]
+name = "quald"
+path = "src/bin.rs"
+
+[dependencies]
+fullypeek = "0.1.0"
